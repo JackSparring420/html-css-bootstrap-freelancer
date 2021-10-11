@@ -1,19 +1,17 @@
 header {
-    height: 10vh;
+    height: 5vh;
     background-color: #2c3e50;
 }
 
 .border {
-    border: solid 20px white;
+    border: solid 2px white !important;
 }
 header div {
     height: 100%;
 }
 
-.jumbotron {
-    height: 40vh;
+.jumbotron, .about {
     background-color: #1abc9c;
-    text-align: center;
     color:white;
 }
 
@@ -29,6 +27,28 @@ header div {
 
 .portfolio {
     text-align: center;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 120px;
+    padding: 10px;
+}
+
+#message {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #3a546d;
+    height: auto;
+}
+
+#fine {
+    background-color: #2c3e50;
+    height: 5vh;
 }
 
 @media all and (max-width:991px) {
