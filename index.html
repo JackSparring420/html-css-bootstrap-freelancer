@@ -4,70 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>html-css-bootstrap-freelancer</title>
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="container-sm">
-            <div class="row">
-                <div class="col-6 border"></div>
-                <div class="col-6 border">
-                    <div class="row">
-                        <div class="col-sm-12 col-lg-4 border"></div>
-                        <div class="col-lg-4 border scompare"></div>
-                        <div class="col-lg-4 border scompare"></div>
-                    </div>
-                </div>
+    <!-- bs component -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">PROFILO</a></li>
+                      <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                      <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
+
     <main>
         <section class="jumbotron container-fluid">
             <div class="row text-center justify-content-center">
-                <div class="col-12 img larghezza"></div>
-                <div class="col-12"><h1>testo</h1></div>
-                <div class="col-12">testo</div>
-                <div class="col-12">testo</div>  
+                <div class="col-12 img larghezza">
+                    <img src="img/avatar.svg" alt="avatar">
+                </div>
+                <div class="col-12"><h1>START BOOTSTRAP</h1></div>
+                <div class="col-12 ">
+                    <div class="linea"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="linea"></div>
+                </div>
+                <div class="col-12">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</div>  
             </div>
         </section>
         
         <section class="portfolio container">
             <div class="row">
-                <div class="col-12"><h1>testo</h1></div>
-                <div class="col-12">testo</div>
+                <div class="col-12"><h1>PORTFOLIO</h1></div>
+                <div class="col-12 ">
+                    <div class="linea bg_black"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="linea bg_black"></div>
+                </div>
             </div>
-            <div class="row justify-content-around">
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
-                <div class="col-sm-12 col-lg-6 col-xl-4 img border"></div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/cabin.png" alt="">
+                    </div>
+                </div>
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/cake.png" alt="">
+                    </div>
+                </div>
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/circus.png" alt="">
+                    </div>
+                </div>
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/game.png" alt="">
+                    </div>
+                </div>
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/safe.png" alt="">
+                    </div>
+                </div>
+                <div class="col img">
+                    <div class="contenuto">
+                        <img src="img/submarine.png" alt="">
+                    </div>
+                </div>
             </div>
         </section> 
+
         <section class="about container-fluid text-center">
             <div class="container-sm">
                 <div class="row">
-                    <div class="col-12"><h1>testo</h1></div>
-                    <div class="col-12">testo</div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-lg-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis error natus ad? Vero animi ducimus explicabo? Unde reiciendis illum assumenda nulla voluptatibus, molestiae perspiciatis natus corrupti aperiam. Suscipit, accusantium.
+                    <div class="col-12"><h1>ABOUT</h1></div>
+                    <div class="col-12 ">
+                        <div class="linea"></div>
+                        <i class="fas fa-star"></i>
+                        <div class="linea"></div>
                     </div>
-                    <div class="col-sm-12 col-lg-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita numquam porro officia officiis, ut architecto neque repellendus sapiente dignissimos, provident ratione corrupti possimus! Cumque et pariatur animi commodi officia.
-                    </div> 
-                    <div class="button">download</div> 
                 </div>
+                <div class="row row-cols-1 row-cols-md-2 justify-content-center text-start">
+                    <div class="col">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheet for easy customization.
+                    </div>
+                    <div class="col">
+                        Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template in the perfect starting point!
+                    </div> 
+                    <!-- <div class="button">download</div>  -->
+                </div>
+                <div><button type="button" class="btn btn-outline-secondary"><i class="fas fa-download"></i> Download</button></div>
             </div>
-        </section>   
-        <section class="contact-me container-sm">
+        </section> 
+
+        <section class="contact-me container">
             <div class="row text-center">
-                <div class="col-12"><h1>testo</h1></div>
-                <div class="col-12">testo</div>
+                <div class="col-12"><h1>CONTACT ME</h1></div>
+                <div class="col-12 ">
+                    <div class="linea bg_black"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="linea bg_black"></div>
+                </div>
             </div>
             <div>
                 <div>Name</div>
@@ -78,25 +141,41 @@
                 <hr>
                 <div id="message">Message</div>
                 <hr>
-                <div class="button about text-center">Send</div>
+                <!-- <div class="button about text-center">Send</div> -->
+                <button type="button" class="btn btn-success">Send</button>
             </div>
         </section>
         <footer class="container-fluid text-center">
-                <div class="container-sm">
+                <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-lg-4 border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deleniti repudiandae reprehenderit! Quia ex iste dolore pariatur voluptatem soluta, natus laboriosam vel temporibus, obcaecati explicabo nostrum, debitis et voluptatibus reprehenderit.</div>
-                        <div class="col-sm-12 col-lg-4 border">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eaque corporis ipsa, rem repellendus magni fuga nostrum veritatis? Recusandae laborum maxime voluptatem vero commodi quidem voluptas asperiores sed delectus harum.</div>
-                        <div class="col-sm-12 col-lg-4 border">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione expedita modi id omnis, eius culpa totam dolorum natus velit. Similique voluptas iste architecto, consequuntur voluptates mollitia autem quo ut recusandae.</div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h2>LOCATION</h2>
+                            <div>2215 John Daniel Drive Clark, MO</div>
+                            <div>54243</div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h2>AROUND THE WEB</h2>
+                            <div>
+                                <div class="circle"><i class="fab fa-facebook-f"></i></div>
+                                <div class="circle"><i class="fab fa-google-plus-g"></i></div>
+                                <div class="circle"><i class="fab fa-twitter"></i></div>
+                                <div class="circle"><i class="fab fa-linkedin-in"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4">
+                            <h2>ABOUT FREELANCER</h2>
+                            <div>Freelance is a free to use, open source Bootstrap theme created by <span id="green">Start Bootstrap</span>.</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row" id="fine">
-                    <div class="col-12 border">testo</div>
+                    <div class="col-12">Copiyright <i class="far fa-copyright"></i> your Website 2019</div>
                 </div>
         </footer>
             
         
     </main>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
