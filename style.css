@@ -85,7 +85,6 @@ header .row:first-of-type {
     padding-top: 50px;
 }
 
-
 /* about */
 .about {
     font-size: 25px;
@@ -123,9 +122,14 @@ header .row:first-of-type {
 }
 
 #message {
-    margin-bottom: 80px;
+    width: 100%;
+    line-height: initial;
+    margin-bottom: 150px;
 }
 
+.contact-me input {
+    border: none;
+}
 
 /* footer  */
 footer {
@@ -149,8 +153,9 @@ footer {
 
 .circle .fab{
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #green {
@@ -167,8 +172,25 @@ footer .row:last-of-type {
 
 /* media query */
 
-@media all and (min-width: 577px) {
+@media all and (min-width: 576px) and (max-width: 992px) {
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
+    #navbarNavDropdown {
+        display: block;
+        flex-basis:inherit;
+        justify-content: space-around;
+        width: 200px;
+    }
+    .navbar-nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media all (max-width: 575px) {
+    #navbarNavDropdown {
+        display: none;
+    }
+  
 }
